@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skipstone — Coming Soon</title>
+<meta name="description" content="Skipstone Inc. — Digital toys and puzzle apps for iOS. Coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Franklin:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #faf8f5;
+    color: #2c2c2c;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #d4e4de 0%, transparent 70%);
+    opacity: 0.5;
+    animation: drift 20s ease-in-out infinite;
+  }
+
+  body::after {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(196, 168, 130, 0.12) 0%, transparent 70%);
+    animation: drift 25s ease-in-out infinite reverse;
+  }
+
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(30px, -20px); }
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .icon {
+    margin-bottom: 2.5rem;
+    opacity: 0.6;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #5a5a5a;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 380px;
+  }
+
+  .contact {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: #8a8a8a;
+  }
+
+  .contact a {
+    color: #4a7c6f;
+    text-decoration: none;
+    border-bottom: 1px solid #d4e4de;
+    transition: border-color 0.2s;
+  }
+
+  .contact a:hover { border-color: #4a7c6f; }
+</style>
+</head>
+<body>
+<div class="content">
+  <div class="icon">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="23" stroke="#4a7c6f" stroke-width="1" opacity="0.3"/>
+      <circle cx="24" cy="24" r="15" stroke="#4a7c6f" stroke-width="0.8" opacity="0.5"/>
+      <circle cx="24" cy="24" r="6" fill="#4a7c6f" opacity="0.7"/>
+    </svg>
+  </div>
+  <h1>Skipstone</h1>
+  <p>Something fun is on the way.</p>
+  <div class="contact"><a href="mailto:support@skipstoneapps.com">support@skipstoneapps.com</a></div>
+</div>
+</body>
+</html>
