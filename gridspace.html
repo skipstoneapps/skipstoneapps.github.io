@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GridSpace — Skipstone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Quicksand:wght@600;700&display=fallback" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M 16.8479 21.5526 A 8 8 0 1 1 8.6660 12.0070" stroke="#417387" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M 12.7684 12.9432 A 8 8 0 0 1 16.5502 17.3552" stroke="#417387" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M 21.2640 15.5938 A 5.5 5.5 0 1 1 15.6006 8.5145" stroke="#417387" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M 19.6082 9.8490 A 5.5 5.5 0 0 1 20.8418 11.3910" stroke="#417387" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <circle cx="21" cy="10" r="3.5" stroke="#417387" stroke-width="0.9" fill="none"/>
+        </svg>
+        Skipstone
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+    <!-- Page Header -->
+    <section class="page-header container">
+      <div class="product-title">
+        <img src="img/gridspace-icon.png" alt="GridSpace app icon" class="product-icon">
+        <div>
+          <h1>GridSpace</h1>
+          <p class="subtitle">Diagramless Crossword Puzzles</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Content -->
+    <section class="product-content container">
+      <p class="product-description">
+        GridSpace is a diagramless crossword app where the grid starts empty. You aren't just solving clues — you're deducing the structure of the grid itself. It's a spatial logic puzzle disguised as a crossword, designed for those who enjoy the challenge of building the map while they navigate it.
+      </p>
+      <ul class="product-highlights">
+        <li>15 free puzzles across 3 difficulty levels (7x7, 9x9, and 11x11 grids)</li>
+        <li>Weekly Spotlight puzzles with unique themes</li>
+        <li>Relaxed and Timed game modes</li>
+        <li>Two visual themes: Cosmic (dark) and Classic (light)</li>
+        <li>Additional puzzle packs and hint packs available via in-app purchase</li>
+      </ul>
+
+      <div class="product-meta">
+        <span class="badge badge-teal">Free to Play</span>
+        <span class="badge badge-teal">No login required</span>
+      </div>
+
+      <div class="product-actions">
+        <span class="btn btn-primary btn-disabled"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Download on the App Store</span>
+        <a href="privacy-gridspace.html" class="btn btn-outline">Privacy Policy</a>
+      </div>
+
+      <div class="screenshot-gallery">
+        <img src="img/gridspace-1.png" alt="GridSpace dark theme gameplay showing a partially solved diagramless crossword">
+        <img src="img/gridspace-5.png" alt="GridSpace Place Numbers mode for marking clue positions">
+        <img src="img/gridspace-4.png" alt="GridSpace puzzle solved celebration screen">
+        <img src="img/gridspace-3.png" alt="GridSpace My Puzzles library view">
+        <img src="img/gridspace-6.png" alt="GridSpace hint system - Check for Errors dialog">
+        <img src="img/gridspace-2.png" alt="GridSpace onboarding - What is a Diagramless Crossword">
+        <img src="img/gridspace-7.png" alt="GridSpace tutorial - How to Solve the Grid">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; 2026 Skipstone Inc.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
