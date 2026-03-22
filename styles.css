@@ -369,13 +369,13 @@ img {
 
 .product-title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.25rem;
 }
 
 .product-icon {
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
