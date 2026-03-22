@@ -14,8 +14,8 @@
   --yellow: #FFC030;
   --yellow-light: #F5DFD0;
   --dark: #2C3333;
-  --gray: #6B7280;
-  --light-bg: #DAE3EC;
+  --gray: #4B5563;
+  --light-bg: #CEDAE6;
   --white: #FFFFFF;
   --shadow: 0 6px 20px rgba(44, 51, 51, 0.22);
   --shadow-hover: 0 12px 32px rgba(44, 51, 51, 0.28);
@@ -42,7 +42,7 @@ html {
 body {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   color: var(--dark);
-  background: linear-gradient(to bottom, var(--light-bg), #FCFBF8);
+  background: linear-gradient(to bottom, var(--light-bg) 0%, #FCFBF8 100vh) no-repeat, #FCFBF8;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -105,7 +105,7 @@ img {
 
 .nav {
   background: var(--white);
-  border-bottom: 3px solid var(--yellow);
+  border-bottom: 1px solid #D0D4D8;
   position: sticky;
   top: 0;
   z-index: 100;
